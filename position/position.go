@@ -4,6 +4,7 @@ package position
 
 import (
 	"fmt"
+
 	"github.com/andrewbackes/chess/piece"
 	"github.com/andrewbackes/chess/position/move"
 	"github.com/andrewbackes/chess/position/square"
@@ -272,11 +273,16 @@ func (p *Position) adjustBoard(m move.Move, from, to square.Square, movingPiece,
 // Put places a piece on the square and removes any other piece
 // that may be on that square.
 func (p *Position) Put(pp piece.Piece, s square.Square) {
+	p.ClearSquare(s)
+	p.QuickPut(pp, s)
+}
+
+// ClearSquare removes any piece off the given square
+func (p *Position) ClearSquare(s square.Square) {
 	pc := p.OnSquare(s)
 	if pc.Type != piece.None {
 		p.bitBoard[pc.Color][pc.Type] ^= (1 << s)
 	}
-	p.bitBoard[pp.Color][pp.Type] |= (1 << s)
 }
 
 // QuickPut places a piece on the square without removing
