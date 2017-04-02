@@ -3,8 +3,8 @@ package diag
 import (
 	"errors"
 	"fmt"
-	"github.com/andrewbackes/chess/epd"
-	"github.com/andrewbackes/chess/position"
+	"github.com/reecer/chess/epd"
+	"github.com/reecer/chess/position"
 	"os"
 	"strconv"
 	"strings"

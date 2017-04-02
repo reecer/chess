@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/andrewbackes/chess)](https://goreportcard.com/report/github.com/andrewbackes/chess) [![GoDoc](https://godoc.org/github.com/andrewbackes/chess?status.svg)](https://godoc.org/github.com/andrewbackes/chess) [![Build Status](https://travis-ci.org/andrewbackes/chess.svg?branch=master)](https://travis-ci.org/andrewbackes/chess) [![Coverage Status](https://coveralls.io/repos/github/andrewbackes/chess/badge.svg?branch=master)](https://coveralls.io/github/andrewbackes/chess?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/reecer/chess)](https://goreportcard.com/report/github.com/reecer/chess) [![GoDoc](https://godoc.org/github.com/reecer/chess?status.svg)](https://godoc.org/github.com/reecer/chess) [![Build Status](https://travis-ci.org/reecer/chess.svg?branch=master)](https://travis-ci.org/reecer/chess) [![Coverage Status](https://coveralls.io/repos/github/reecer/chess/badge.svg?branch=master)](https://coveralls.io/github/reecer/chess?branch=master)
 
 # Chess
 Multipurpose chess package for Go/Golang.
@@ -14,12 +14,12 @@ This package provides tools for working with chess games. You can:
 - Generate legal moves from any position
 - and more
 
-For details you can visit the [godoc](https://godoc.org/github.com/andrewbackes/chess)
+For details you can visit the [godoc](https://godoc.org/github.com/reecer/chess)
 
 ## How to get it
 If you have your GOPATH set in the recommended way ([golang.org](https://golang.org/doc/code.html#GOPATH)) then you can use `go get`:
 
-```go get github.com/andrewbackes/chess/<pkg name>```
+```go get github.com/reecer/chess/<pkg name>```
 
 otherwise you can clone the repo.
 
@@ -29,8 +29,8 @@ otherwise you can clone the repo.
 ```Go
 import (
     "fmt"
-    "github.com/andrewbackes/chess/game"
-	"github.com/andrewbackes/chess/position"
+    "github.com/reecer/chess/game"
+	"github.com/reecer/chess/position"
 )
 
 func ExampleFoolsMate() {
@@ -58,8 +58,8 @@ func ExampleFoolsMate() {
 ```Go
 import (
     "fmt"
-    "github.com/andrewbackes/chess/game"
-    "github.com/andrewbackes/chess/position"
+    "github.com/reecer/chess/game"
+    "github.com/reecer/chess/position"
     "time"
 )
 
@@ -77,7 +77,7 @@ func ExampleTimedGame() {
 import (
 	"bufio"
 	"fmt"
-	"github.com/andrewbackes/chess/game"
+	"github.com/reecer/chess/game"
 	"os"
 	"time"
 )
@@ -104,7 +104,7 @@ func ExamplePlayTimedGame() {
 ```Go
 import (
     "fmt"
-    "github.com/andrewbackes/chess/pgn"
+    "github.com/reecer/chess/pgn"
     "os"
 )
 
@@ -123,7 +123,7 @@ func ExamplePrintGMGames() {
 ```Go
 import (
     "fmt"
-    "github.com/andrewbackes/chess/fen"
+    "github.com/reecer/chess/fen"
 )
 
 func ExampleSaavedraPositionFEN() {
@@ -141,8 +141,8 @@ func ExampleSaavedraPositionFEN() {
 ```Go
 import (
     "fmt"
-    "github.com/andrewbackes/chess/fen"
-	"github.com/andrewbackes/chess/game"
+    "github.com/reecer/chess/fen"
+	"github.com/reecer/chess/game"
 )
 
 func ExampleSaavedraPositionMoves() {

@@ -4,11 +4,11 @@ package chess
 import (
 	"bufio"
 	"fmt"
-	"github.com/andrewbackes/chess/fen"
-	"github.com/andrewbackes/chess/game"
-	"github.com/andrewbackes/chess/pgn"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/reecer/chess/fen"
+	"github.com/reecer/chess/game"
+	"github.com/reecer/chess/pgn"
+	"github.com/reecer/chess/position/move"
+	"github.com/reecer/chess/position/square"
 	"os"
 	"time"
 )

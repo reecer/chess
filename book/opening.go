@@ -2,7 +2,7 @@ package book
 
 import (
 	"errors"
-	"github.com/andrewbackes/chess/game"
+	"github.com/reecer/chess/game"
 )
 
 // Opening is an  opening to a chess game.

@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"errors"
 	"fmt"
-	"github.com/andrewbackes/chess/game"
+	"github.com/reecer/chess/game"
 	"io"
 	"strings"
 )

@@ -3,8 +3,8 @@ package book
 
 import (
 	"encoding/binary"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/reecer/chess/position/move"
+	"github.com/reecer/chess/position/square"
 	"io"
 	"os"
 	"sort"

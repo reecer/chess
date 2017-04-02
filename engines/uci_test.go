@@ -2,7 +2,7 @@ package engines
 
 import (
 	"bufio"
-	"github.com/andrewbackes/chess/game"
+	"github.com/reecer/chess/game"
 	"os"
 	"strings"
 	"testing"

@@ -2,8 +2,8 @@
 package move
 
 import (
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/reecer/chess/piece"
+	"github.com/reecer/chess/position/square"
 	"time"
 )
 

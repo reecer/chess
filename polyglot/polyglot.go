@@ -2,9 +2,9 @@
 package polyglot
 
 import (
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/reecer/chess/piece"
+	"github.com/reecer/chess/position"
+	"github.com/reecer/chess/position/square"
 )
 
 // Encode returns the polyglot hash of the current game position. For more

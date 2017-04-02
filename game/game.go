@@ -3,11 +3,11 @@ package game
 
 import (
 	"fmt"
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/polyglot"
-	"github.com/andrewbackes/chess/position"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/reecer/chess/piece"
+	"github.com/reecer/chess/polyglot"
+	"github.com/reecer/chess/position"
+	"github.com/reecer/chess/position/move"
+	"github.com/reecer/chess/position/square"
 	"time"
 )
 
@@ -136,8 +136,8 @@ func (G *Game) illegalMoveStatus() GameStatus {
 	return BlackIllegalMove
 }
 
-// TODO(andrewbackes): threeFold detection should not have to go through all of the move history.
-// BUG(andrewbackes): starting FEN is not considered when calculating threefold.
+// TODO(reecer): threeFold detection should not have to go through all of the move history.
+// BUG(reecer): starting FEN is not considered when calculating threefold.
 func (G *Game) threeFold() bool {
 	hash := polyglot.Encode(G.Position)
 	if G.positionCache[hash] >= 3 {

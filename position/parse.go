@@ -2,9 +2,9 @@ package position
 
 import (
 	"errors"
-	"github.com/andrewbackes/chess/piece"
-	"github.com/andrewbackes/chess/position/move"
-	"github.com/andrewbackes/chess/position/square"
+	"github.com/reecer/chess/piece"
+	"github.com/reecer/chess/position/move"
+	"github.com/reecer/chess/position/square"
 	"regexp"
 	"strings"
 )
@@ -12,9 +12,9 @@ import (
 // ParseMove transforms a move written in standard algebraic notation (SAN)
 // to a move written in Pure Coordinate Notation (PCN).
 //
-// TODO(andrewbackes): ParseMove - What about promotion captures? or ambiguous promotions?
-// BUG(andrewbackes): ParseMove - Illegal move: f7g8 (raw: fxg8=Q)
-// BUG(andrewbackes): ParseMove - Illegal move: move axb8=Q+
+// TODO(reecer): ParseMove - What about promotion captures? or ambiguous promotions?
+// BUG(reecer): ParseMove - Illegal move: f7g8 (raw: fxg8=Q)
+// BUG(reecer): ParseMove - Illegal move: move axb8=Q+
 func (p *Position) ParseMove(san string) (move.Move, error) {
 
 	// Check for null move:

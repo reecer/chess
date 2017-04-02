@@ -1,8 +1,8 @@
 package polyglot
 
 import (
-	"github.com/andrewbackes/chess/fen"
-	"github.com/andrewbackes/chess/piece"
+	"github.com/reecer/chess/fen"
+	"github.com/reecer/chess/piece"
 	"testing"
 )
 
